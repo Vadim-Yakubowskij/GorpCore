@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <title>GorpCore</title>
   <link rel ="icon" href = "/images/pngwing.com.png">
+  
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<!-- Hero -->
   <section class="et-hero-tabs">
     <div class="baze">
       <h1>GorpCore</h1>
@@ -25,19 +24,39 @@
               </div>
           </div>
           <div class="links_div">
-              <a class="et-hero-tab" href="#tab-es6">Clothes</a>
-              <a class="et-hero-tab" href="#tab-flexbox">Journey</a>
+              <a class="et-hero-tab" href="#tab-es6">Journey</a>
+              <a class="et-hero-tab" href="#tab-flexbox">Clothes</a>
               <a class="et-hero-tab" href="#tab-react">About</a>
               <span class="et-hero-tab-slider"></span>
           </div>
       </header>
   </section>
-
-  <!-- Main -->
   <main class="et-main">
     <section class="et-slide1" id="tab-es6">
-      <h1>Clothes</h1>
-      <h3>something about es6</h3>
+      <div class="Clothes">
+        <div class="infoAvtor">
+          <h4>Будущее в руках тех, кто исследует… И от всей красоты, которую они открывают, пересекая вечно отступающие границы, они развивают бесконечную любовь к природе и человечеству.</h4>
+          <div class="avtor">
+            <img src="/images/avtor.jpg" class="imgAvtor" alt="" width="100px">
+            <h3>Jacques-Yves Cousteau</h3>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slides">
+              <div class="slide active">
+                  <img src="/images/aerial-shot-mountains-blue-sky-white-clouds.jpg" alt="Слайд 1" width="800px">
+              </div>
+              <div class="slide">
+                  <img src="/images/beautiful-shot-top-mountain.jpg" alt="Слайд 2" width="800px">
+              </div>
+              <div class="slide">
+                  <img src="/images/horizontal-shot-white-mountains-forest-clear-sky.jpg" alt="Слайд 3" width="800px">
+              </div>
+          </div>
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+      </div>
     </section>
     <section class="et-slide2" id="tab-flexbox">
       <h1>Journey</h1>
@@ -48,7 +67,9 @@
       <h3>something about react</h3>
     </section>
   </main>
-<!-- partial -->
+  <footer>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum ducimus eligendi ullam, eos dolore omnis asperiores ab fuga esse nam quod rerum dignissimos distinctio praesentium sint sed exercitationem repellat.</h2>
+  </footer>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>

@@ -5,7 +5,14 @@ body {
 a {
   text-decoration: none;
 }
-
+footer{
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
 .et-hero-tabs,
 .et-slide {
   display: flex;
@@ -14,7 +21,7 @@ a {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('/images/6221846.jpg');
+  background-image: url('/images/aerial-shot-mountains-blue-sky-white-clouds.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -28,7 +35,7 @@ a {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-color: antiquewhite;
+  background-image: url('/images/beautiful-shot-top-mountain.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -42,7 +49,7 @@ a {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-color: antiquewhite;
+  background-image: url('/images/horizontal-shot-white-mountains-forest-clear-sky.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -56,7 +63,7 @@ a {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-color: antiquewhite;
+  background-image: url('/images/6221846.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -71,9 +78,7 @@ a {
 }
 .et-hero-tabs h3,
 .et-slide h3 {
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
-  opacity: 0.6;
+  color:#001219;
 }
 
 .et-hero-tabs-container {
@@ -93,29 +98,29 @@ a {
 }
 
 .et-hero-tab {
-  font-size: 20px;
-  color:#000000;
+  color:#001219;
   display: inline-block;
   text-decoration: none;
   margin-right: 10%;
   transition: 0.1s;
-  border-bottom: 0 solid #000000;
+  border-bottom: 0 solid #001219;
 }
 .et-hero-tab:hover {
-  color:#000000;
-  border-bottom-width: 1px;
+  color:#001219;
+  font-weight: bold;
 }
 .links_div{
   margin-top: 1.3%;
   width: 140%;
   padding-left: 0%;
+  color: #001219;
 }
 .et-hero-tab-slider {
   position: absolute;
   bottom: 0;
   width: 0;
   height: 6px;
-  background: #000000;
+  background: #001219;
   transition: left 0.3s ease;
 }
 
@@ -134,7 +139,7 @@ a {
   }
 }
 .head {   
-  background-color: #edf2f4;    
+  background-color: #dee2e6;    
   background-position: center center;      
   background-repeat: no-repeat;      
   background-attachment: fixed;      
@@ -149,9 +154,108 @@ a {
   flex-direction: row;
 }
 .name_1{
-  color: #000000;
+  color: #001219;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 150%;
+}
+.baze h3{
+  font-size: 200%;
+  color: #001219;
+}
+.baze h1{
+  font-size: 600%;
+  color: #001219;
+}
+.imgAvtor{
+  border-radius: 100%;
+}
+.Clothes{
+	display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: #dee2e6;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5%;
+  border-radius: 20px;
+  color: azure;
+}
+.infoAvtor{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.avtor{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+}
+.avtor h3{
+  padding-left: 5%;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.slider {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none; /* Скрыть все слайды по умолчанию */
+}
+
+.slide.active {
+  display: block; /* Показать только активный слайд */
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  color: #333;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }

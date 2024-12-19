@@ -73,3 +73,29 @@ class StickyNavigation {
 }
 
 new StickyNavigation();
+
+let slideIndex = 0;
+let slides = document.querySelectorAll(".slide");
+let autoSlideInterval;
+
+function showSlide(n) {
+    slides[slideIndex].classList.remove("active");
+    slideIndex = (n + slides.length) % slides.length; // Обеспечивает цикличный переход
+    slides[slideIndex].classList.add("active");
+}
+
+function plusSlides(n) {
+    clearInterval(autoSlideInterval); // Остановить автоматическую промотку
+    showSlide(slideIndex + n);
+    startAutoSlide(); // Запустить автоматическую промотку снова
+}
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(function() {
+        showSlide(slideIndex + 1);
+    }, 3000); // Изменять слайд каждые 3 секунды
+}
+
+// Инициализация
+showSlide(slideIndex);
+startAutoSlide();
