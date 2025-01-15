@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleCardPay.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel ="icon" href = "/images/cardpay.png">
 </head>
 <body>
     <div class = "formaPay">
@@ -22,17 +23,15 @@
             <div class="infoForCard">
                 <div class="infoForConected">
                     <input type="text" placeholder="Введите номер карты" maxlength=16 id = "number" class = "numberCard" onkeypress="return valCard(event);">
-                    <img src="#" id = "bankImage" alt="" width="40px">
+                    <img src="#" id = "bankImage" alt="" width="50px">
                 </div>
-                <div class="infoForCard2">
-                    <input type="text" placeholder="Месяц" maxlength="2" class="numberCard" onkeypress="return valDate(event);">
-                    <div><h1>/</h1></div>
-                    <input type="text" placeholder="Год" maxlength="2" class="numberCard" onkeypress="return valDate(event);">
-                </div>
-            </div>
-            <div class="CVVInfoForCard">
-                <div>
-                    <input type="text" placeholder="CVV/CV" maxlength=3 class = "numberCard" onkeypress="return valCVV(event);">
+                <div class="container">
+                    <div class="infoForCard2">
+                        <input type="text" placeholder="Месяц/год" maxlength="5" id ="dateCard" class="numberCardMounth" onkeypress="return valDate(event);">
+                    </div>
+                    <div class="CVVInfoForCard">
+                        <input type="text" placeholder="CVC/CVV" maxlength=3 class = "numberCardCVV" onkeypress="return valCVV(event);">
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,7 +71,7 @@
             }
         }
         function valDate(e) {
-        return (e.key >= '0' && e.key <= '9') && (e.target.value.length < 2);
+        return (e.key >= '0' && e.key <= '9') && (e.target.value.length < 5);
         }
 
         function valCVV(e) {
@@ -82,6 +81,13 @@
         function valCard(e) {
             return (e.key >= '0' && e.key <= '9') && (e.target.value.length < 16);
         }
+        var input1 = document.getElementById('dateCard');
+        input1.oninput = function() {
+        var str = document.getElementById('dateCard');
+        if (str.value.length == 2) {
+            document.getElementById('dateCard').value += '/';
+        }
+}
 
     </script>
 </body>

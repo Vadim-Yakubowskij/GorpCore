@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Светлый фон для контраста */
+    margin: 0;
+    padding: 20px;
+    margin-top: 14%;
+    background-image: url(/images/horizontal-shot-white-mountains-forest-clear-sky.jpg);
+    background-size: cover;
+}
+
+.formaPay {
+    background-image: url(/images/fonPay.jpg);
+    background-size: cover;
+    background-color: #ade8f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.informationForPay {
+    margin-bottom: 20px;
+}
+
+.DitalesForPay div {
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: #333;
+    font-size: 34px;
+    margin: 0;
+}
+
+h6 {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+.cardPay {
+    margin-top: 20px;
+}
+
+.infoForCard {
+    margin-bottom: 20px;
+}
+
+.infoForConected {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.numberCard {
+    width: 30.6%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.numberCard:focus {
+    border-color: #4CAF50; /* Зеленый цвет при фокусе */
+    outline: none;
+}
+.numberCardMounth:focus {
+    border-color: #4CAF50; /* Зеленый цвет при фокусе */
+    outline: none;
+}
+.numberCardCVV:focus {
+    border-color: #4CAF50; /* Зеленый цвет при фокусе */
+    outline: none;
+}
+
+img {
+    width: 40px; /* Максимальная высота изображения */
+    border-radius: 7px;
+}
+
+.container {
+    display: flex;
+}
+
+.infoForCard2 {
+    width: 20%;
+   
+}
+.numberCardMounth{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.numberCardCVV {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.CVVInfoForCard {
+    width: 20%;
+}
+
+.acceptedPayProticols {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.acceprButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #161816; /* Зеленая кнопка */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.acceprButton:hover {
+    background-color: #495049; /* Темнее при наведении */
+}
+
+label {
+    color: #333;
+    font-size: 14px;
+    margin-left: 5px;
+}
