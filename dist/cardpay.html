@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "formaPay">
+        <div class = "informationForPay">
+            <div class = "DitalesForPay">
+                <div><h3>Оплата: 1221,00р</h1></div>
+                <div><h6>Магазин TinkoffBank</h6></div>
+                <div><h6>Номер заказа: 12234556144562431</h6></div>
+            </div>
+            <div>
+                <h6>Безопасное соединение</h6>
+            </div>
+        </div>
+        <div class = "CardPay">
+            <div class="infoForCard">
+                <div class="infoForConected">
+                    <input type="text" placeholder="Введите номер карты" maxlength=16 id = "number" class = "numberCard" onkeypress="return valCard(event);">
+                    <img src="#" id = "bankImage" alt="" width="40px">
+                </div>
+                <div class="infoForCard2">
+                    <input type="text" placeholder="Месяц" maxlength="2" class="numberCard" onkeypress="return valDate(event);">
+                    <div><h1>/</h1></div>
+                    <input type="text" placeholder="Год" maxlength="2" class="numberCard" onkeypress="return valDate(event);">
+                </div>
+            </div>
+            <div class="CVVInfoForCard">
+                <div>
+                    <input type="text" placeholder="CVV/CV" maxlength=3 class = "numberCard" onkeypress="return valCVV(event);">
+                </div>
+            </div>
+        </div>
+        <div class="acceptedPayProticols">
+            <div>
+                <input type="checkbox" name="chec" id = "remember">
+                <label for="chec">Ознакомлен с правилами оплаты</label>
+            </div>
+            <div>
+                <button class="acceprButton" type="button" onclick = "validate()">Готово</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const input = document.getElementById('number');
+        input.addEventListener('input', function() {
+            const value = input.value;
+            if(value%10000000000000000 == 220){
+                document.getElementById('bankImage').src = '/images/tbank.png';
+            }
+            if(value%10000000000000000 == 427){
+                document.getElementById('bankImage').src = '/images/sberbank.png';
+            }
+            if(value%10000000000000000 == 423){
+                document.getElementById('bankImage').src = '/images/vtb.png';
+            }
+            if(value <= 99){
+                document.getElementById('bankImage').src = '#';
+            }
+             
+        });
+        function validate() {
+            if (document.getElementById('remember').checked) {
+                alert("checked");
+            } else {
+                alert("You didn't check it! Let me check it for you.");
+            }
+        }
+        function valDate(e) {
+        return (e.key >= '0' && e.key <= '9') && (e.target.value.length < 2);
+        }
+
+        function valCVV(e) {
+            return (e.key >= '0' && e.key <= '9') && (e.target.value.length < 3);
+        }
+
+        function valCard(e) {
+            return (e.key >= '0' && e.key <= '9') && (e.target.value.length < 16);
+        }
+
+    </script>
+</body>
+</html>
