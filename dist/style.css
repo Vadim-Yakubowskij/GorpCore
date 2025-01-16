@@ -12,6 +12,7 @@ footer{
   justify-content: center;
   align-items: center;
   padding: 2%;
+  flex-direction: column;
 }
 .et-hero-tabs,
 .et-slide {
@@ -111,7 +112,7 @@ footer{
 }
 .links_div{
   margin-top: 1.3%;
-  width: 140%;
+  width: 100%;
   padding-left: 0%;
   color: #001219;
 }
@@ -139,14 +140,11 @@ footer{
   }
 }
 .head {   
-  background-color: #dee2e6;    
-  background-position: center center;      
-  background-repeat: no-repeat;      
-  background-attachment: fixed;      
-  background-size: cover;      
+  background-color: #dee2e6;          
   display: flex;
   width: 100%;
   flex-direction: row;
+  justify-content: space-between;
 
 }
 .name{
@@ -258,4 +256,28 @@ button:hover {
 
 .next {
   right: 10px;
+}
+.footer1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer_logo h4{
+  margin-left: 20%;
+  font-size: 25px;
+}
+hr{
+  background: #fff;
+  width: 100%;
+}
+.footer_img img{
+  width: 25px;
+  border: #fff;
+}
+.footer_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1%;
 }

@@ -16,6 +16,8 @@ body {
   padding: 15px;
   background: #edf2f4;
   overflow: hidden;
+  background-image: url(/images/beautiful-shot-top-mountain.jpg);
+  background-size: cover;
 }
 
 .wrapper {
