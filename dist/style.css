@@ -1,5 +1,5 @@
 body {
-  font-family: "Century Gothic", "Lato", sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -169,7 +169,7 @@ footer{
 .imgAvtor{
   border-radius: 100%;
 }
-.Clothes{
+.Journey{
 	display:flex;
   flex-direction: row;
   justify-content: center;
@@ -186,6 +186,9 @@ footer{
   flex-direction: column;
   text-align: start;
 }
+.infoAvtor h3{
+  font-style: italic;
+}
 .avtor{
   display: flex;
   flex-direction: row;
@@ -197,7 +200,6 @@ footer{
   padding-left: 5%;
 }
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
@@ -271,8 +273,10 @@ hr{
   width: 100%;
 }
 .footer_img img{
-  width: 25px;
-  border: #fff;
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 .footer_img{
   display: flex;
