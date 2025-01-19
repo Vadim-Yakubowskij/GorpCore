@@ -50,7 +50,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('/images/horizontal-shot-white-mountains-forest-clear-sky.jpg');
+  background-image: url('/images/gandr-collage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -64,7 +64,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('/images/6221846.jpg');
+  background-image: url('/images/beautiful-shot-foggy-mountains.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -185,6 +185,7 @@ footer{
   display: flex;
   flex-direction: column;
   text-align: start;
+  margin-right: 2%;
 }
 .infoAvtor h3{
   font-style: italic;
@@ -222,11 +223,11 @@ body {
 .slide {
   min-width: 100%;
   box-sizing: border-box;
-  display: none; /* Скрыть все слайды по умолчанию */
+  display: none;
 }
 
 .slide.active {
-  display: block; /* Показать только активный слайд */
+  display: block; 
 }
 
 .slide img {
@@ -234,7 +235,7 @@ body {
   border-radius: 10px;
 }
 
-button {
+.prev,.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -248,7 +249,7 @@ button {
   color: #333;
 }
 
-button:hover {
+.prev,.next:hover {
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -284,4 +285,52 @@ hr{
   align-items: center;
   flex-direction: column;
   margin: 1%;
+}
+.Clothes{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  width: 80%;
+  background-color: #dee2e6;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5%;
+  border-radius: 20px;
+  color: azure;
+  color: #001219;
+}
+.slider_Clothes {
+  position: relative;
+  min-width: 400px;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 0%;
+  margin-right: 10%;
+}
+.slide_Clothes {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+.slides_Clothes {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide_Clothes img {
+  width: 100%;
+  border-radius: 10px;
+}
+.slide_Clothes.active {
+  display: block; 
+}
+.infoClothes h4{
+  font-weight:1000;
+}
+.infoClothes{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
 }

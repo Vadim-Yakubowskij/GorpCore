@@ -99,3 +99,29 @@ function startAutoSlide() {
 // Инициализация
 showSlide(slideIndex);
 startAutoSlide();
+
+let slideIndex_Clothes = 0;
+let slides_Clothes = document.querySelectorAll(".slide_Clothes");
+let autoSlideInterval_Clothes;
+
+function showSlide_Clothes(n) {
+    slides_Clothes[slideIndex_Clothes].classList.remove("active");
+    slideIndex_Clothes = (n + slides_Clothes.length) % slides_Clothes.length; // Обеспечивает цикличный переход
+    slides_Clothes[slideIndex_Clothes].classList.add("active");
+}
+
+function plusSlides_Clothes(n) {
+    clearInterval(autoSlideInterval_Clothes); // Остановить автоматическую промотку
+    showSlide_Clothes(slideIndex_Clothes + n);
+    startAutoSlide_Clothes(); // Запустить автоматическую промотку снова
+}
+
+function startAutoSlide_Clothes() {
+    autoSlideInterval_Clothes = setInterval(function() {
+        showSlide_Clothes(slideIndex_Clothes + 1);
+    }, 9000); // Изменять слайд каждые 9 секунды
+}
+
+// Инициализация
+showSlide_Clothes(slideIndex_Clothes);
+startAutoSlide_Clothes();
