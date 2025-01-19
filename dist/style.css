@@ -289,11 +289,11 @@ hr{
 .Clothes{
   display:flex;
   flex-direction: row-reverse;
-  justify-content: start;
+  justify-content:flex-start;
   width: 80%;
   background-color: #dee2e6;
   background: rgba(255, 255, 255, 0.7);
-  padding: 5%;
+  padding: 3%;
   border-radius: 20px;
   color: azure;
   color: #001219;
@@ -327,10 +327,27 @@ hr{
 }
 .infoClothes h4{
   font-weight:1000;
+  
 }
 .infoClothes{
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2%;
+}
+.size_Buttons{
+  display: flex;
+  flex-direction: row;
+}
+.infoPryse{
+  display: flex;
   justify-content: flex-start;
-
+  flex-direction: column;
+}
+.size{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
