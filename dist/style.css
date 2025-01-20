@@ -289,7 +289,7 @@ hr{
 .Clothes{
   display:flex;
   flex-direction: row-reverse;
-  justify-content:flex-start;
+  justify-content:flex-end;
   width: 80%;
   background-color: #dee2e6;
   background: rgba(255, 255, 255, 0.7);
