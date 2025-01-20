@@ -16,7 +16,7 @@ body {
   padding: 15px;
   background: #edf2f4;
   overflow: hidden;
-  background-image: url(/images/beautiful-shot-top-mountain.jpg);
+  background-image: url(../images/beautiful-shot-foggy-mountains.jpg);
   background-size: cover;
 }
 
@@ -30,7 +30,7 @@ body {
 
 .wrapper .title {
   height: 120px;
-  background-image: url(/images/kamchatka.jpg);
+  background-image: url(../images/kamchatka.jpg);
   border-radius: 5px 5px 0 0;
   color: #fff;
   font-size: 30px;

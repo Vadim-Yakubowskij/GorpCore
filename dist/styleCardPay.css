@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 20px;
     margin-top: 14%;
-    background-image: url(/images/horizontal-shot-white-mountains-forest-clear-sky.jpg);
+    background-image: url(../images/horizontal-shot-white-mountains-.jpg);
     background-size: cover;
 }
 
 .formaPay {
-    background-image: url(/images/fonPay.jpg);
+    background-image: url(../images/fonPay.jpg);
     background-size: cover;
     background-color: #ade8f4;
     border-radius: 8px;

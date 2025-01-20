@@ -22,7 +22,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('/images/aerial-shot-mountains-blue-sky-white-clouds.jpg');
+  background-image: url('../images/aerial-shot-mountains-blue-sky-white-clouds.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -36,7 +36,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('/images/beautiful-shot-top-mountain.jpg');
+  background-image: url('../images/beautiful-shot-top-mountain.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,7 +50,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('/images/gandr-collage.jpg');
+  background-image: url('../images/gandr-collage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -64,7 +64,7 @@ footer{
   align-items: center;
   height: 100vh;
   position: relative;
-  background-image: url('/images/beautiful-shot-foggy-mountains.jpg');
+  background-image: url('../images/beautiful-shot-foggy-mountains.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -360,7 +360,7 @@ hr{
   background-color: transparent;
   border: 2px solid #1a7431;
   border-radius: 100%;
-  width: 35px;
+  width: 35..px;
   height: 35px;
   color: #1a7431;
   cursor: pointer;
