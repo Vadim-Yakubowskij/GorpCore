@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styleCardPay.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel ="icon" href = "/images/cardpay.png">
+    <link rel ="icon" href = "../images/cardpay.png">
 </head>
 <body>
     <div class = "formaPay">
@@ -50,13 +50,13 @@
         input.addEventListener('input', function() {
             const value = input.value;
             if(value%10000000000000000 == 220){
-                document.getElementById('bankImage').src = '/images/tbank.png';
+                document.getElementById('bankImage').src = '../images/tbank.png';
             }
             if(value%10000000000000000 == 427){
-                document.getElementById('bankImage').src = '/images/sberbank.png';
+                document.getElementById('bankImage').src = '../images/sberbank.png';
             }
             if(value%10000000000000000 == 423){
-                document.getElementById('bankImage').src = '/images/vtb.png';
+                document.getElementById('bankImage').src = '../images/vtb.png';
             }
             if(value <= 99){
                 document.getElementById('bankImage').src = '#';
