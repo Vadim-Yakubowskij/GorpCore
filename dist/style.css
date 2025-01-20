@@ -289,10 +289,10 @@ hr{
 .Clothes{
   display:flex;
   flex-direction: row-reverse;
-  justify-content:flex-end;
+  justify-content:center;
   width: 80%;
   background-color: #dee2e6;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(178, 216, 181, 0.7);
   padding: 3%;
   border-radius: 20px;
   color: azure;
@@ -344,10 +344,105 @@ hr{
 .infoPryse{
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
+  color: #1a7431;
 }
 .size{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: start;
+  color: #1a7431;
+}
+.size_Buttons{
+  display: flex;
+  justify-content: center;
+}
+.sizeBut{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1a7431;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  color: #1a7431;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-right: 7px;
+
+} 
+.shoppingСart {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1a7431;
+  border-radius: 15px;
+  color: #1a7431;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  padding: 10px 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-left: 200px;
+}
+
+.shoppingСart:disabled {
+  pointer-events: none;
+}
+
+.shoppingСart:hover {
+  color: #fff;
+  background-color: #1a7431;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.shoppingСart:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.sizeBut:disabled {
+  pointer-events: none;
+}
+
+.sizeBut:hover {
+  color: #fff;
+  background-color: #1a7431;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.sizeBut:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.logo_Clothers{
+  margin-top: 17%;
+  display: flex;
+  justify-content: end;
+
+}
+.logo_Clothers1 {
+ padding-right: 10%;
+ display: flex;
+ justify-content: end;
+ color: #1a7431;
 }
